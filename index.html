@@ -16,7 +16,8 @@
     .squared-image
     {
         width: 50%;
-        max-width: 600px;
+        max-width: 800px;
+        height: auto;
     }
 
     .standard-centered-text
@@ -25,7 +26,48 @@
         font-size: 3vh;
     }
 
-    @media screen and (width <= 600px)
+    .navbar
+    {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        font-size: 3vh;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar a 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover 
+    {
+        background: #ddd;
+        color: black;
+    }
+
+    .main 
+    {
+        margin-top: 6vh;
+        width: 100%;
+        background-color: #ffdddd;
+    }
+
+    .footer
+    {
+        text-align: center;
+        background-color: #333;
+        color: #f2f2f2;
+        font-size: 1vh;
+    }
+
+    @media screen and (width <= 800px)
     {
         #logo-image
         {
@@ -35,6 +77,7 @@
         .squared-image
         {
             width: 100%;
+            height: auto;
         }
     }
 
@@ -45,86 +88,110 @@
         <title>Matta!! per le pulizie</title>
     </head>
     <body>
-        <div class="logo-container">
-            <img src="img/logo.png" id="logo-image"/>
+        <div class="navbar">
+            <a href="#a-top">Home</a>
+            <a href="#contact-us">Contattaci</a>
         </div>
 
-        <div style="height: 3vh;">
-            &nbsp;
-        </div>
+        <div class="main">
+            <div style="height: 6vh;" id="a-top">
+                &nbsp;
+            </div>
 
-        <div class="standard-centered-text">
-            <a href="#contact-us">CONTATTACI</a> 
-            <br/>
-            o scorri verso il basso per conoscerci meglio 😉
-        </div>
+            <div class="logo-container" id="home">
+                <img src="img/logo.png" id="logo-image"/>
+            </div>
+    
+            <div style="height: 3vh;">
+                &nbsp;
+            </div>
+    
+            <div class="standard-centered-text">
+                <a href="#contact-us">CONTATTACI</a> 
+                <br/>
+                o scorri verso il basso per conoscerci meglio 😉
+            </div>
+    
+            <div style="height: 10vh;">
+                &nbsp;
+            </div>
+    
+            <div class="standard-centered-text">
+                Svolgiamo la nostra attivit&agrave; con estrema professionalit&agrave; al fine di garantire la qualit&agrave; dei nostri servizi.
+            </div>
+    
+            <div class="logo-container">
+                <img src="img/pavimento-scacchiera.jpg" class="squared-image"/>
+            </div>
+    
+            <div class="standard-centered-text">
+                La nostra attivit&agrave; si rivolge a clientele diverse, ad esempio strutture alberghiere nelle quali oltre ad occuparci delle pulizie facciamo anche l'allestimento per i nuovi ospiti...
+            </div>
+    
+            <div class="logo-container">
+                <img src="img/hotel-before-after.jpg" class="squared-image"/>
+            </div>
+    
+            <div class="standard-centered-text">
+                ...o imprese alle quali offriamo il nostro servizio per la pulizia di fine cantiere, ...
+            </div>
+    
+            <div class="logo-container">
+                <img src="img/fine-cantiere.jpg" class="squared-image"/>
+            </div>
+    
+            <div class="standard-centered-text">
+                ...consegna appartamenti... 
+            </div>
+    
+            <div class="logo-container">
+                <img src="img/consegna-appartamento.jpg" class="squared-image"/>
+            </div>
+    
+            <div class="standard-centered-text">
+                ...e pulizia vetrate.
+            </div>
+    
+            <div class="logo-container">
+                <img src="img/pulizia-vetrata.jpg" class="squared-image"/>
+            </div>
+    
+            <div class="standard-centered-text">
+                Lavoriamo inoltre per palestre, negozi, uffici e concessionarie.
+            </div>
+    
+            <div style="height: 3vh;">
+                &nbsp;
+            </div>
+    
+            <div class="standard-centered-text">
+                Contiamo su un team di collaboratori esperti e qualificati che operano da anni nel settore ed utilizziamo prodotti di alta qualit&agrave;.
+            </div>
+    
+            <div style="height: 10vh;">
+                &nbsp;
+            </div>
+    
+            <div class="standard-centered-text" id="contact-us">
+                <u>Contatti:</u><br/><br/>
+                <i>Matta per le pulizie di Roxana-Mihaela Lincan</i><br/><br/>
+                <i>Via Ceresio 55 - 6963 Pregassona</i><br/><br/>
+                <i>Telefono: </i>+41 077 906 95 18<br/><br/>
+                <i>Mail: </i><a href="mailto:mattaperlepulizie@gmail.com">mattaperlepulizie@gmail.com</a>
+            </div>
 
-        <div style="height: 10vh;">
-            &nbsp;
-        </div>
-
-        <div class="standard-centered-text">
-            Svolgiamo la nostra attivit&agrave; con estrema professionalit&agrave; al fine di garantire la qualit&agrave; dei nostri servizi.
-        </div>
-
-        <div class="logo-container">
-            <img src="img/pavimento-scacchiera.jpg" class="squared-image"/>
-        </div>
-
-        <div class="standard-centered-text">
-            La nostra attivit&agrave; si rivolge a clientele diverse, ad esempio strutture alberghiere nelle quali oltre ad occuparci delle pulizie facciamo anche l'allestimento per i nuovi ospiti...
-        </div>
-
-        <div class="logo-container">
-            <img src="img/hotel-before-after.jpg" class="squared-image"/>
-        </div>
-
-        <div class="standard-centered-text">
-            ...o imprese alle quali offriamo il nostro servizio per la pulizia di fine cantiere, ...
-        </div>
-
-        <div class="logo-container">
-            <img src="img/fine-cantiere.jpg" class="squared-image"/>
-        </div>
-
-        <div class="standard-centered-text">
-            ...consegna appartamenti... 
-        </div>
-
-        <div class="logo-container">
-            <img src="img/consegna-appartamento.jpg" class="squared-image"/>
-        </div>
-
-        <div class="standard-centered-text">
-            ...e pulizia vetrate.
-        </div>
-
-        <div class="logo-container">
-            <img src="img/pulizia-vetrata.jpg" class="squared-image"/>
-        </div>
-
-        <div class="standard-centered-text">
-            Lavoriamo inoltre per palestre, negozi, uffici e concessionarie.
-        </div>
-
-        <div style="height: 3vh;">
-            &nbsp;
-        </div>
-
-        <div class="standard-centered-text">
-            Contiamo su un team di collaboratori esperti e qualificati che operano da anni nel settore ed utilizziamo prodotti di alta qualit&agrave;.
-        </div>
-
-        <div style="height: 10vh;">
-            &nbsp;
-        </div>
-
-        <div class="standard-centered-text">
-            <u>Contatti:</u><br/><br/>
-            <i>Matta per le pulizie di Roxana-Mihaela Lincan</i><br/><br/>
-            <i>Via Ceresio 55 - 6963 Pregassona</i><br/><br/>
-            <i>Telefono: </i>+41 077 906 95 18<br/><br/>
-            <i>Mail: </i><a href="mailto:mattaperlepulizie@gmail.com">mattaperlepulizie@gmail.com</a>
+            <div style="height: 6vh;" id="a-top">
+                &nbsp;
+            </div>
         </div>
     </body>
+
+    <footer>
+        <div class="footer">
+            Matta per le pulizie di Roxana-Mihaela Lincan<br/>
+            Via Ceresio 55 - 6963 Pregassona<br/>
+            mattaperlepulizie@gmail.com<br/>
+            CHE - 156.639.172
+        </div>
+    </footer>
 </html>
